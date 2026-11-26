@@ -1,3 +1,6 @@
 -R theories CMetLogic
 
-theories/prelude.v
+theories/analysis_extras.v
+theories/extmet.v
+theories/disintegration.v
+theories/wasserstein.v
