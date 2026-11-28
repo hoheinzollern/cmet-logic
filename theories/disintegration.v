@@ -14,15 +14,15 @@ From CMetLogic Require Import analysis_extras.
 (* # Disintegration                                                           *)
 (*                                                                            *)
 (* Reference: A. Klenke, Probability Theory: A Comprehensive Course, 2nd ed., *)
-(* Springer 2014, Sect. 8.3.  We prove (the product-space form of) Thm 8.29  *)
-(* (regular conditional distributions in R) following the structure of its   *)
-(* proof, with these differences: versions are Radon-Nikodym derivatives     *)
-(* w.r.t. the marginal instead of conditional expectations; the null sets    *)
-(* (8.12) for right-continuity at rationals are not used, the identity being *)
-(* proved at every real t by dominated convergence along rationals q > t;    *)
-(* the limits (8.13) are obtained from continuity of measures; the pi-system *)
-(* is ]t, +oo[ (t real) instead of (-oo, r] (r rational).  The extension to  *)
-(* standard Borel spaces (standardBorelType, as in mathcomp-qbs) is Thm 8.37.*)
+(* Springer 2014, Sect. 8.3.  We prove (the product-space form of) Thm 8.29   *)
+(* (regular conditional distributions in R) following the structure of its    *)
+(* proof, with these differences: versions are Radon-Nikodym derivatives      *)
+(* w.r.t. the marginal instead of conditional expectations; the null sets     *)
+(* (8.12) for right-continuity at rationals are not used, the identity being  *)
+(* proved at every real t by dominated convergence along rationals q > t;     *)
+(* the limits (8.13) are obtained from continuity of measures; the pi-system  *)
+(* is ]t, +oo[ (t real) instead of (-oo, r] (r rational).  The extension to   *)
+(* standard Borel spaces (standardBorelType, as in mathcomp-qbs) is Thm 8.37. *)
 (*                                                                            *)
 (* Let pi be a probability measure on X * R.  For every rational q, the       *)
 (* measure A |-> pi (A `*` `]-oo, q]) is absolutely continuous w.r.t. the     *)
@@ -1272,4 +1272,3 @@ apply: ae_eq_integral => //.
 Qed.
 
 End disintegration_borel.
-
